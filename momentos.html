@@ -1,18 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Momentos</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <title>Momentos</title>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    .fotos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .fotos img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    }
+  </style>
 </head>
 <body>
-    <h1>📸 Momentos Especiales 📸</h1>
-    <img src="foto1.jpg" alt="Foto 1" style="width: 45%; max-width: 300px; margin: 10px;">
-    <img src="foto2.jpg" alt="Foto 2" style="width: 45%; max-width: 300px; margin: 10px;">
-    <img src="foto3.jpg" alt="Foto 3" style="width: 45%; max-width: 300px; margin: 10px;">
-    <img src="foto4.jpg" alt="Foto 4" style="width: 45%; max-width: 300px; margin: 10px;">
-    <br><br>
-    <a href="index.html"><button>Volver</button></a>
+  <h1>📸 Momentos Especiales 📸</h1>
+  <div class="fotos">
+    <img src="foto1.jpg" alt="Foto 1">
+    <img src="foto2.jpg" alt="Foto 2">
+    <img src="foto3.jpg" alt="Foto 3">
+    <img src="foto4.jpg" alt="Foto 4">
+  </div>
+  <br>
+  <a href="index.html"><button>Volver</button></a>
 </body>
 </html>
