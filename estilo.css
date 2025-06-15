@@ -24,7 +24,7 @@ h1 {
 }
 
 p {
-  color: #fbe8c4; /* color tipo arena/beige claro */
+  color: white; /* color tipo arena/beige claro */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra suave y elegante */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.1em;
