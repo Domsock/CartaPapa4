@@ -1,32 +1,66 @@
-
 body {
-    background-image: url('fondo_padre.png');
-    background-size: cover;
-    background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
-    text-align: center;
-    padding: 50px;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('fondo_padre.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #F5DEB3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
 h1 {
-    font-size: 2.8em;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  color: #fbe8c4;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
 }
 
+p {
+  color: #fbe8c4; /* color tipo arena/beige claro */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* sombra suave y elegante */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.8;
+  margin: 15px auto;
+  width: 90%;
+}
+
+
 button {
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 1em;
-    border: none;
-    border-radius: 10px;
-    background-color: #007acc;
-    color: white;
-    cursor: pointer;
-    transition: background 0.3s;
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  background-color: #007acc;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #005fa3;
+  background-color: #005fa3;
+}
+
+.carousel {
+  max-width: 90%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
