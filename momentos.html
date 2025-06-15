@@ -8,25 +8,22 @@
 <body>
   <h1>📸 Momentos Especiales 📸</h1>
 
-  <div class="carousel-container">
-    <div class="carousel" id="carousel">
-      <img src="foto1.jpg" alt="Foto 1">
-      <img src="foto2.jpg" alt="Foto 2">
-      <img src="foto3.jpg" alt="Foto 3">
-      <img src="foto4.jpg" alt="Foto 4">
-    </div>
+  <div class="carousel">
+    <img id="foto" src="foto1.jpg" alt="Momento especial">
   </div>
 
-  <br>
   <a href="index.html"><button>Volver</button></a>
 
   <script>
-    const carousel = document.getElementById('carousel');
-    let index = 0;
+    const fotos = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg", "1000834945.jpg", "1000834946.jpg", "1000834947.jpg"];
+    let indice = 0;
+    const img = document.getElementById("foto");
+
     setInterval(() => {
-      index = (index + 1) % 4;
-      carousel.style.transform = `translateX(-${index * 100}%)`;
-    }, 3000);
+      indice = (indice + 1) % fotos.length;
+      img.src = fotos[indice];
+    }, 2500);
   </script>
 </body>
+
 </html>
