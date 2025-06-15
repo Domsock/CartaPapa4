@@ -14,16 +14,17 @@
 
   <a href="index.html"><button>Volver</button></a>
 
-  <script>
-    const fotos = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
-    let indice = 0;
-    const img = document.getElementById("foto");
+<script>
+  const fotos = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg"];
+  let indice = 0;
+  const img = document.getElementById("foto");
 
-    setInterval(() => {
-      indice = (indice + 1) % fotos.length;
-      img.src = fotos[indice];
-    }, 2500);
-  </script>
+  setInterval(() => {
+    img.src = fotos[indice];
+    indice = (indice + 1) % fotos.length;
+  }, 2500);
+</script>
+
 </body>
 
 </html>
