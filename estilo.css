@@ -5,7 +5,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #F5DEB3;
+  color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  color: #fbe8c4;
+  color: white;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
   font-size: 2.5em;
   font-weight: bold;
